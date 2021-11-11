@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  grpcdotnet.service:
+    image: ${DOCKER_REGISTRY-}grpcdotnetservice
+    ports:
+    - "6000:443"
+    build:
+      context: .
+      dockerfile: src/GrpcDotnet.Service/Dockerfile
+
+  grpcdotnet.client:
+    image: ${DOCKER_REGISTRY-}grpcdotnetclient
+    build:
+      context: .
+      dockerfile: src/GrpcDotnet.Client/Dockerfile

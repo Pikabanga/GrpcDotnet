@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "GrpcDotnet.Client": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
